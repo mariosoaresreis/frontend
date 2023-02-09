@@ -1,0 +1,15 @@
+<div style="text-align: center;">
+  <h1>
+     {{title}}
+  </h1>  
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Write an integer number</mat-label>
+      <input [(ngModel)]="this.inputNumber"  matInput placeholder="Example: 5" value="" [ngModelOptions]="{standalone:true}" >
+    </mat-form-field>
+    <br>
+    <button type="button" class="btn btn-primary" (click)="this.result = getInfo(this.inputNumber)">Calculate!</button> 
+  </form>
+  <br>
+  <label> The alticci number for {{this.choosenNumber}} is  {{this.result}} </label>
+</div>

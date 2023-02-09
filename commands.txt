@@ -1,0 +1,2 @@
+ng server
+--access in localhost:4200
